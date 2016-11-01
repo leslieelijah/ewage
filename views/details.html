@@ -1,0 +1,127 @@
+
+        <!--Section of Data-->
+        <Section>
+            <div class="container-fluid">
+                
+                <div class="row">
+                  <form > 
+                      <div ng-controller="detailsCntlr">                      
+                        <h4 class="col-md-12">Personal Details</h4>
+
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">First Name</label> <input class="col-sm-5" type="text" ng-model="details.firstName" placeholder="Enter your First name">
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Surname</label> <input class="col-sm-5" type="text" ng-model="details.surname" placeholder="Enter your surname">
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Age</label> <input class="col-sm-5" type="text" ng-model="details.age" placeholder="Age">
+                        </div>
+
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Gender</label>
+                            <select class="col-sm-6" ng-model="details.gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Race</label> 
+                            <select class="col-sm-6" ng-model="details.race">
+                                <option>African</option>
+                                <option>White</option>
+                                <option>Indian</option>
+                                <option>Coloured</option>
+                            </select>
+                        </div>
+                          <div class="row col-md-12">
+                            <label class="col-sm-4">Province</label>
+                            <select class="col-sm-6" ng-model="details.province">
+                                <option selected value="Select a Province">Select a Province</option>
+                                <option>Limpopo</option>
+                                <option>Gauteng</option>
+                                <option>Mpumalanga</option>
+                                <option>Free State</option>
+                                <option>Northern Cape</option>
+                                <option>North West</option>
+                                <option>Eastern Cape</option>
+                                <option>Kwazulu Natal</option>
+                                <option>Western Cape</option>
+                            </select>
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Department</label> 
+                            <select class="col-sm-6" ng-model="details.department">
+                                <option selected value="Select a Department">Select a Department</option>
+                                <option>Finance</option>
+                                <option>Human Resource</option>
+                                <option>Execute</option>
+                                <option>IT</option>
+                                <option>Software Development</option>
+                                <option>Quality Assurence</option>
+                                <option>Graduate</option>
+                            </select>
+                        </div>  
+                          
+                          <!-- ReSults -->
+                          
+                        <div class="row col-md-12 text-center">
+                            {{details.firstName}}<br />
+                            {{details.surname}}<br />
+                            {{details.age}}<br />
+                            {{details.race}}<br />
+                            {{details.gender}}<br />
+                            {{details.province}}<br />
+                            {{details.department}}
+                        </div>
+                          
+                      </div>
+                      
+                      <div ng-controller="contactsCntlr">
+                        <h4 class="col-md-12">Contact Details</h4>                     
+                    
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Cell Number</label> <input class="col-sm-5" type="number" ng-model="contacts.cellnumber" placeholder="Enter your Cellnumber">
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">E-mail Address</label> <input class="col-sm-5" type="text" ng-model="contacts.email" placeholder="Enter your email">
+                        </div>
+                        <div class="row col-md-12">
+                            <label class="col-sm-4">Address</label> <input class="col-sm-5" type="text" ng-model="contacts.address" placeholder="Address">
+                        </div>
+                        
+                          
+                         <!-- ReSults -->
+                          
+                        <div class="row col-md-12 text-center">
+                            {{contacts.cellNumber}}<br />
+                            {{contacts.address}}<br />
+                            {{contacts.email}}
+                        </div>
+                      </div>
+                  
+                    <div class="row col-md-12">  
+                     <label class="col-sm-4">&nbsp;</label> <input class="col-sm-4 btn btn-default" type="submit" value="Enter Employee" />
+                        
+                    </div>
+                </form> 
+                </div>
+                
+                </div>
+
+        </Section>
+        <!--/Section of Data/-->
+
+
+
+    <!--Section of Data-->
+    <section>
+        <div class="backbtn row">
+            <div class="col-md-12">
+                <a class="btn btn-default" role="button" href="javascript:window.history.go(-1)">Go home</a>
+                <a class="btn btn-default" role="button" href="javascript:window.history.go(0)">Go back <<</a>
+            </div>
+        </div>
+    </section>
+
+

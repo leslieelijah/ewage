@@ -1,0 +1,47 @@
+var AWS = require('aws-sdk');
+
+var dynamoDBConfiguration = {
+    "accessKeyId": "AccessKey",
+    "secretAccessKey": "Secratekey",
+    "region": "us-west-2"
+  };
+
+AWS.config.update(dynamoDBConfiguration);
+
+var dd = new AWS.DynamoDB();
+var tableName = 'product_bhavik';
+
+exports.handler = function(event, context) {
+  try {
+    putItem = function(itemName,prod_Id, prod_Name, prod_Desc, prod_Price) {
+        console.log(" putItem Function Called");
+         var item = {
+            'itemName': { 'S': itemName },
+            'microtime': { 'N': new Date().getTime().toString() }
+          };
+
+          if (prod_Id) item.prod_Id = { 'N': prod_Id.toString()};
+          if (prod_Name) item.prod_Name = { 'S': prod_Name };
+          if (prod_Desc) item.prod_Desc = { 'S': prod_Desc };
+          if (prod_Price) item.prod_Price = { 'N': prod_Price.toString()};
+
+          console.log("Data: %j",item);
+          var response = dd.putItem({
+             'TableName': tableName,
+             'Item': item
+          }, function(err, data) {
+              if (err) {
+                context.fail("Error in putItem "+err);
+              } else {
+                context.succeed("Successfully Inserted");
+              }
+          });
+        };
+
+    putItem('Item1',1, 'Laptop', 'Laptop for the IT users',10000);
+
+  } catch (error) {
+    context.fail("Caught: " + error);
+  }
+
+}
