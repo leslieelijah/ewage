@@ -70,27 +70,7 @@ app.post('/adduser', function(req, res) {
     });
 });
 
-console.log(5 + 5 * 10);
 
-/*
-
-//Connecting MS SQL
-var Connection = require('mssql').Connection;  
-var config = {  
-    userName: 'JHBDVT\LMahasha',  
-    password: '',  
-    server: 'DVTLJF72N72',  
-    // If you are on Microsoft Azure, you need this:  
-    options: {encrypt: true, database: 'employeePortal'}  
-};  
-var connection = new Connection(config);  
-connection.on('connect', function(err) {  
-// If no error, then good to proceed.  
-    console.log("Connected");  
-});
-
-
-*/
 app.engine('html', cons.swig);
 
 // set .html as the default extension 
@@ -102,3 +82,4 @@ app.use('/models', express.static(__dirname + '/models'));
 app.use('/controllers', express.static(__dirname + '/controllers'));
 
 app.listen(port);
+console.log("The server is running...");
