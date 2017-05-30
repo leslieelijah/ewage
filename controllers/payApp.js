@@ -4,8 +4,12 @@
  var app = angular.module("payApp", ['ngRoute']);
     
 //Create a controller
+<<<<<<< HEAD
 /*
 app.controller('mainController', ['$scope', '$http', fuappnction ($scope, $http) {
+=======
+app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
 
                     var url = "assets/json/emp-db.txt";
                     var pageTitle = "Kolobje";
@@ -24,6 +28,7 @@ app.controller('mainController', ['$scope', '$http', fuappnction ($scope, $http)
                     $scope.hourPerday = hourPerday;
 
             }]);
+<<<<<<< HEAD
 */
 app.config(function ($routeProvider) {
                     $routeProvider
@@ -39,6 +44,23 @@ app.config(function ($routeProvider) {
                     })
                     .when("/newemp", {
                         templateUrl: "/partials/newemp.html"
+=======
+
+app.config(function ($routeProvider) {
+                    $routeProvider
+                    .when("/", {
+                        templateUrl: "main.html",
+                        controller: 'mainController'
+                    })
+                    .when("/details", {
+                        templateUrl: "details.html"
+                    })
+                    .when("/payroll", {
+                        templateUrl: "payroll.html"
+                    })
+                    .when("/newemp", {
+                        templateUrl: "newemp.html"
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
                     })
 
                     .otherwise({ redirectTo: '/' });

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html ng-app="employeeApp">
+=======
+<html ng-app="payApp">
+
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
 <head>
     <title>Employee Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+<<<<<<< HEAD
 	<link rel="icon" href="/img/favicon.ico">
    
 
@@ -11,10 +17,21 @@
     <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
+=======
+	<link rel="icon" href="assets/img/favicon.ico">
+   
+	 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="/public/css/style.css" />
+
+    <!-- scripts -->
+
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
 
 </head>
 
 <body>
+<<<<<<< HEAD
 	<div id="wrap" ng-controller="employeeCntlr">
         <div id="home" class="container-fluid">
             <!-- Holds the menu section on the SPA -->
@@ -53,11 +70,37 @@
                 <div class="col-md-12">
                     <p class="text-center">
                         {{currentYear | date: 'yyyy'}}. All rights reserved.
+=======
+	<div id="wrap" ng-controller="mainController">
+        <div id="home" class="container-fluid">
+            <header>
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="/public/img/mEmployeeLogo.png" width="20%"/>
+                    </div>
+                </div>                    
+            </header>
+
+            <section>    
+                <div class="row">            
+                    <div ng-view></div>                     
+                </div>               
+            </section>
+
+        </div>
+    
+        <footer>
+            <div class="row">                    
+                <div class="col-md-12">
+                    <p class="text-center">
+                        &copy; 2016. All rights reserved.                            
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
                     </p>
                 </div>
             </div>
 
         </footer>
+<<<<<<< HEAD
         <!-- /Copy Right/ -->
     </div>   
     
@@ -75,3 +118,19 @@
 
 </body>
 </html>
+=======
+    </div>
+    
+   
+    
+    <!-- Scripts -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>	
+	<script src="/models/app.js"></script>
+   
+
+</body>
+</html>
+>>>>>>> 5880a2ad9f210f13c0a3698aa9d610aa2a09f7f2
