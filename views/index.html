@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="employeeApp">
+<head>
+    <title>Employee Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="icon" href="/img/favicon.ico">
+   
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+	<div id="wrap" ng-controller="employeeCntlr">
+        <div id="home" class="container-fluid">
+            <!-- Holds the menu section on the SPA -->
+            <header>
+                 <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="/img/mEmployeeLogo.png" width="50%" class="img-responsive">
+                    </div>                     
+                     <div class="col-md-8">
+                         <nav class="col-md-12 pull-right">
+                             <ul class="list-inline text-right" style="padding-top:20px;">
+                                 <li><a href="#salaries">Employee Salaries</a></li>
+                                 <li><a href="#details">Details</a></li>
+                                 <li><a href="#salaries">Salaries</a></li>
+                                 <li><a href="#list">Employee List</a></li>
+                             </ul>
+                         </nav>
+                     </div>
+                </div>                    
+            </header>
+            <!-- /Holds the menu section on the SPA/ -->
+
+            <!-- The section to display content -->
+            <section>    
+                <div class="row">            
+                    <div class="col-md-12" ng-view></div>                
+                </div>         
+            </section>
+            <!-- /The section to display content/ -->
+
+        </div>
+        <!-- Copy Right -->
+        <footer>
+        	<div class="row">&nbsp;</div>
+            <div class="row">                    
+                <div class="col-md-12">
+                    <p class="text-center">
+                        {{currentYear | date: 'yyyy'}}. All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+        <!-- /Copy Right/ -->
+    </div>   
+    
+
+
+    <!-- Scripts --> 
+    <script src="/lib/jquery/src/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+    <script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/js/salaryApp.js"></script><!-- -->   
+    <!-- /Scripts/ --> 
+
+
+</body>
+</html>

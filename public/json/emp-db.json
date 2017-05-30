@@ -1,0 +1,121 @@
+[
+	{
+		"firstName":"Penny",
+		"surname":"Seemela",
+		"employeeNo":"001",	
+		"position":"Human Resource Manager",
+		"department":"Human Resources",
+		"mobile":"0605822661",
+		"email":"pennys@kolobje.com",
+		"skypeID":"pennys",
+		"hourlyRate":120
+	},
+	
+	{
+		"firstName":"Lesego",
+		"surname":"Pilane",
+		"employeeNo":"002",	
+		"position":"Electronics Engineer",
+		"department":"Software Development",
+		"mobile":"0815822661",
+		"email":"lesegop@kolobje.com",
+		"skypeID":"lesegop",
+		"hourlyRate":125
+	},
+	
+	{
+		"firstName":"Peter",
+		"surname":"VanNieKerk",
+		"employeeNo":"003",	
+		"position":"Technician",
+		"department":"Support",
+		"mobile":"0815822661",
+		"email":"petterv@kolobje.com",
+		"skypeID":"petterv",
+		"hourlyRate":130
+	},
+	
+	{
+		"firstName":"William",
+		"surname":"Cele",
+		"employeeNo":"004",	
+		"position":"PHP Developer",
+		"department":"Software Development",
+		"mobile":"0815822661",
+		"email":"williamc@kolobje.com",
+		"skypeID":"williamc",
+		"hourlyRate":135
+	},
+	
+	{
+		"firstName":"Muzi",
+		"surname":"Sibanyoni",
+		"employeeNo":"005",	
+		"position":"Talent Agent",
+		"department":"Talent Search",
+		"mobile":"0815822661",
+		"email":"muzis@kolobje.com",
+		"skypeID":"muzis",
+		"hourlyRate":140
+	},
+	
+	{
+		"firstName":"Thulani",
+		"surname":"Kunene",
+		"employeeNo":"006",	
+		"position":"Call Centrea Agent",
+		"department":"Call Centre",
+		"mobile":"0795826006",
+		"email":"thulanik@kolobje.com",
+		"skypeID":"thulanik",
+		"hourlyRate":145
+	},
+	
+	{
+		"firstName":"Sandra",
+		"surname":"Roux",
+		"employeeNo":"007",	
+		"position":"Electronics Engineer",
+		"department":"Software Development",
+		"mobile":"0615822007",
+		"email":"sandrar@kolobje.com",
+		"skypeID":"sandrar",
+		"hourlyRate":150
+	},
+	
+	{
+		"firstName":"Ngwako",
+		"surname":"Mahasha",
+		"employeeNo":"008",	
+		"position":"CEO",
+		"department":"KolobjeTM",
+		"mobile":"0815822661",
+		"email":"leslie@kolobje.com",
+		"skypeID":"leslie051385",
+		"hourlyRate":155		
+	},
+	
+	{
+		"firstName":"Thabo",
+		"surname":"Mahasha",
+		"employeeNo":"009",	
+		"position":"MD",
+		"department":"KolobjeTM",
+		"mobile":"0782880100",
+		"email":"thabom@kolobje.com",
+		"skypeID":"thabom",
+		"hourlyRate":160
+	},
+	
+	{
+		"firstName":"Reneilwe",
+		"surname":"Mahasha",
+		"employeeNo":"010",	
+		"position":"COO",
+		"department":"KolobjeTM",
+		"mobile":"0761125566",
+		"email":"renailwem@kolobje.com",
+		"skypeID":"renailwem",
+		"hourlyRate":165
+	}
+]

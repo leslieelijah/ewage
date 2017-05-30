@@ -1,0 +1,44 @@
+    <!--Section of Data-->
+    <Section ng-controller="salariesCntlr">
+        <div class="container-fluid">
+
+            <form ng-submit="myFunc" method="get">    
+
+            <div class="row">
+                <div class="col-sm-12">                    
+                    <div class="col-sm-4">
+                        <label class="col-sm-12">Employee Number:</label>
+                        <label class="col-sm-12">Hourly Rate::</label>
+                        <label class="col-sm-12">Hours worked:</label>
+                        <label class="col-sm-12">Days worked:</label>
+                        <hr />
+                        <label class="col-sm-12">Gross Income:</label>
+                    </div>
+                        
+                    <div class="col-sm-8">
+                        <div class="col-sm-12"><input type="search" ng-model="employeeSalaries.employeeNo" placeholder="Use '001'"></div>
+                        <div class="col-sm-12"><input type="number" ng-model="employeeSalaries.hourlyRate" placeholder="Enter hours worked"></div>
+                        <div class="col-sm-12"><input type="number" ng-model="employeeSalaries.hoursWorked" placeholder="Enter hours worked"></div>
+                        <div class="col-sm-12"><input type="number" ng-model="employeeSalaries.daysWorked" placeholder="Enter Days worked"></div>
+                        <hr />
+                        <label class="col-sm-12">{{ hoursWorked * daysWorked * hourlyRate  | currency: 'R' }}</label>
+                    </div>                    
+                </div>
+                
+            </div>
+            
+            </form>
+        </div>
+
+    </Section>
+
+
+    <section>
+        <div class="backbtn row">
+            <div class="col-md-12">
+                <a class="btn btn-default" role="button" href="javascript:window.history.go()">Go home</a>
+                <a class="btn btn-default" role="button" href="javascript:window.history.go(-1)">Go back <<</a>
+            </div>
+        </div>
+    </section>
+
